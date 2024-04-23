@@ -4,6 +4,7 @@ import { app } from "./service/firebase";
 import { DateTime } from "luxon";
 import { For, createSignal } from "solid-js";
 import Title from "./components/title";
+declare const window: any;
 
 function App() {
   const [logs, setLogs]: any = createSignal([]);
@@ -37,6 +38,7 @@ function App() {
     }
     return "bg-pink-600";
   };
+  
 
   return (
     <>
