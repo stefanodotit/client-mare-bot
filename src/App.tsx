@@ -42,6 +42,7 @@ function App() {
     <>
       <Title />
       <div class="container mx-auto px-4 mt-10">
+        <button onClick={() => window.PushAlertCo.forceSubscribe()}>Subscribe</button>
         <ol class="relative border-l border-gray-200 dark:border-gray-700">
           <For each={logs()}>
             {(log) => (
